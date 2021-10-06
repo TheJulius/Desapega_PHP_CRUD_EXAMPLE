@@ -8,7 +8,7 @@ class ProdutoDao{
 
         $sql = 'INSERT INTO product(nome,cor,tamanho) VALUES (?,?,?)';
 
-        $stmt  = Conexao::getConn()->prepare($sql);
+        $stmt  = Conexao::getInstance()->prepare($sql);
 
         $stmt->bindValue(1, $p->getNome());
         $stmt->bindValue(2, $p->getCor());
