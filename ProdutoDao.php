@@ -15,7 +15,6 @@ class ProdutoDao{
         $stmt->bindValue(3, $p->getTamanho());
         
         $stms->execute();
-
     }
 
     public function read(){
